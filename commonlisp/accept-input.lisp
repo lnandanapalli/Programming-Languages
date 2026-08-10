@@ -5,7 +5,6 @@
 
 (defun ask-and-return ()
     (let ((name (ask-name)))
-        (format t "~A~%" name)
         name))
 
-(princ (ask-and-return))
+(format t "Hello ~A~%" (ask-and-return))
